@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#166534" />
+    <meta name="description" content="DeenPath - Your Complete Islamic Companion App with Quran, Hadith, Prayer Times, Qibla Direction, and more" />
+    <meta name="keywords" content="Islamic app, Quran, Hadith, Prayer times, Qibla finder, Tasbih counter, DeenPath" />
+    <meta name="author" content="Mamun" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DeenPath" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DeenPath - Islamic Companion App" />
+    <meta property="og:description" content="Your complete Islamic companion with Quran, Hadith, Prayer times, and more." />
+    <meta property="og:image" content="/icons/icon-512x512.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="DeenPath - Islamic Companion App" />
+    <meta property="twitter:description" content="Your complete Islamic companion with Quran, Hadith, Prayer times, and more." />
+    <meta property="twitter:image" content="/icons/icon-512x512.png" />
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "85c8fca0-8759-436d-80eb-3af19cc10d64",
+          allowLocalhostAsSecureOrigin: true,
+          notifyButton: {
+            enable: true,
+            size: 'medium',
+            theme: 'default',
+            position: 'bottom-right',
+            showCredit: false,
+          }
+        });
+      });
+    </script>
+    <link rel="manifest" href="/manifest.json" />
+    <title>DeenPath - Islamic Companion App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
